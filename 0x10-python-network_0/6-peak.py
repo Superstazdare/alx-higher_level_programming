@@ -20,7 +20,7 @@ def find_peak(numbr):
         value = numbr[idx]
         if (idx > 0 and idx < length - 1 and
                 numbr[idx + 1] <= value and numbr[idx - 1] <= value):
-                return value
+            return value
         elif idx == 0 and numbr[idx + 1] <= value:
             return value
         elif idx == length - 1 and numbr[idx - 1] <= value:
